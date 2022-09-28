@@ -1,0 +1,55 @@
+
+body{
+    width:80%;
+
+}
+
+
+body > #sharath_cart_details{
+/* background-color: red; */
+border:2px solid red;
+width: 50%;
+display:flex;
+margin-left:15% ;
+}
+
+#sharath_left{
+  margin-left: 5%;
+}
+
+#sharath_cart_form1 >input{
+    width:100%
+}
+
+
+#sharath_cart_details h4{
+    color: #455a64;
+    
+}
+
+#sharath_cart_form1{
+    display: grid;
+    grid-auto-rows: repeat(3);
+}
+
+
+
+
+#sharath_p1 {
+    display: flex;
+    margin:auto;
+    gap:10px;
+    border:2px solid black;
+    cursor: pointer;
+}
+
+#sharath_placeorder{
+    cursor: pointer;
+   background-color:#ff6b00 ;
+   width: 60%;
+   height: 40%;
+    color: white;
+   border-color: #ff6b00;
+   text-align: center;
+   margin-left:16%;
+}

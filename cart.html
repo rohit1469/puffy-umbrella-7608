@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+<link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+    <div id="sharath_cart_details">
+        <div id="sharath_left">
+<div id="sharath_cart_forms">
+<form  id="sharath_cart_form1">
+<b>Your Email and Phone Number</b>
+<div><h4>Email Address</h4> <input size="52%" type="email" id="sharath_cart_form_email" placeholder="Enter your Email address"></div>
+<div><h4>Phone Number</h4> <input size="52" type="number " id="sharath_cart_form_number" placeholder="Enter your Phone Number"></div>
+<div><input type="checkbox" id="sharath_cart_form1_checkbox" ><h5>I agree to be contacted through Whatsapp Updates</h5></div>
+</form>
+<!-- shipping details -->
+    <form id="sharath_cart_delivery_form">
+    <b>Delivery Address</b>
+        <div id="sharath_cart_delivery_details_d">
+    <div id="sharath_cart_delivery_details_d_name">
+       <h4>Name</h4>
+        <input type="text" size="60" name="" id="sharath_cart_delivery_details_d_name_i" placeholder="Enter your Name">
+        
+    </div>
+    <div id="sharath_cart_delivery_details_d_address1">
+        <h4>Address 1</h4>
+        <input type="text" name="" id="sharath_cart_delivery_details_d_address_1" placeholder="Address 1">
+        
+    </div>
+    <div id="sharath_cart_delivery_details_d_address1">
+        <h4>Address 2</h4>
+        <input type="text" name="" id="sharath_cart_delivery_details_d_address_2" placeholder="Address 2">
+        
+    </div>
+    <div id="sharath_cart_delivery_details_d_state">
+        <h4>State</h4>
+ <select name="" id="sharath_cart_delivery_details_d_state1"></select>
+    </div>
+    <div id="sharath_cart_delivery_details_d_city">
+        <input type="text" name="" id="sharath_cart_delivery_details_d_city1" placeholder="City">
+        
+    </div>
+    <div id="sharath_cart_delivery_details_d_country">
+       <h4>Country</h4>
+        <input type="text" name="" id="sharath_cart_delivery_details_d_country1" placeholder="Country">
+        
+    </div>
+
+    <div id="sharath_cart_delivery_details_d_code">
+        <label for="sharath_cart_delivery_details_d_code1"><h4>Pincode</h4></label>
+         <input type="number" name="" id="sharath_cart_delivery_details_d_code1" placeholder="Pin code">
+         
+     </div>
+     
+        </div>
+</form>
+<!-- check if address is same -->
+<div id="sharath_cart_payment_checkbox"><input type="checkbox" id="sharath_cart_payment_checkbox1"><h5>Same as Shipping Address</h5></div>
+<!-- Payment form -->
+<form id="sharath_cart_payment_form">
+<div id="sharath_cart_payment_form_f">
+    <div id="sharath_cart_payment_form_f_address1">
+        <h4>Address 1</h4>
+        <input type="text" name="" id="sharath_cart_payment_form_f_address_1" placeholder="Address 1">
+        
+    </div>
+    <div id="sharath_cart_payment_form_f_address1">
+        <h4>Address 2</h4>
+        <input type="text" name="" id="sharath_cart_payment_form_f_address_2" placeholder="Address 2">
+        
+    </div>
+    <div id="sharath_cart_payment_form_f_state">
+        <h4>State</h4>
+ <select name="" id="sharath_cart_payment_form_f_state1"></select>
+    </div>
+    <div id="sharath_cart_payment_form_f_city">
+        <input type="text" name="" id="sharath_cart_payment_form_f_city1" placeholder="City">
+        
+    </div>
+    <div id="sharath_cart_payment_form_f_country">
+       <h4>Country</h4>
+        <input type="text" name="" id="sharath_cart_payment_form_f_country1" placeholder="Country">
+        
+    </div>
+
+    <div id="sharath_cart_payment_form_f_code">
+        <h4>Pincode</h4>
+         <input type="number" name="" id="sharath_cart_payment_form_f_code1" placeholder="Pin code">
+         
+     </div>
+     
+        </div>
+</form>
+<!-- mode of payment -->
+<div id="sharath_cart_payment_mode">
+<b>Payment Details</b>
+ 
+</div>
+<div id="sharath_p1">
+    <div id="sharath_cod">
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCAA7AEADASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAQGBwMF/8QANRAAAQMDAwICBwYHAAAAAAAAAQIDBAAFEQYSITFBEyIUFRYyUVJxB1WBkZTRIzNCYXKx8P/EABgBAQEBAQEAAAAAAAAAAAAAAAADAQQC/8QAIxEAAgICAgEEAwAAAAAAAAAAAAECEQMhBHESExQikUGBof/aAAwDAQACEQMRAD8A3GlKUApSlAKUqFNu9vgSGo82Y0w68lSkJWrGQOvPQfjQE2lco0liXHbkRnUOsuJCkOIVkKB7g11oBQnAyelKgXy5xbRbHZk5SkspwjypySVEJAA+po3W2Er0R/ajT337bP1jf709qNPffts/Vt/vVH0Zf2Jlyt9jQbZMYDCklSIZQ4AhIwSSsg5+lXidaI7sV5MWPGakKQQ24poEJVjgkd+akptq0UcEnTMn1ze2Zup56xcn34jQQmL6I+lTZHhpJAxnncTz+HaoGnmW5exV3cmtx1YcK0sKdKj2AOMHHx6DqASc1c52i9QvOWtQnRFuNIAfcQnwwle8kr248+U4Tg46E96rVqtDaZVzcktNLCpbqUNFHCNq1f74/KuTKq+UjpUIZEo2QpKHI81YjesHGA5vQ8lpaCrHOSMcZ7gd+e9btClNTojMqOoqZeQFoJGMg/2rAI6HXQpE9qQ2lHupTGOAT739HTP/AB61sX2eOOOaTh+IpxQSVobLiNpLYWQnjA4wBzVeNLbiTzY1GKoslZTr7Uq75bn7bGhJaaRJUkSHpKU7ygqT7v8Alz17Vq1Ypr7SU633dUiIzImQXwtaFBG7wnFKUSnABwMqSenOCM175KyOFQff50Zx3jUrn+uzk20LldrZGU6LEEIcxMbeTlQCRxkbeuPjV1Tp/wBY2aNbIWsJLj8Z1Tq5DL25a0qz5VYVnAzxzXl6S+zsybZGkXx6WwtKllqKkpT4aT0zwSD3x2zXq3nQDDdom+ppM5M0tHwh44AWflOAOvSpx9xJXkSb7r+Ub48fH8cTaX3vuzzfZBe1xQ19K2tfzD45wj6/xOKrET0qLdZ9sizlzkMOlXpLTPj7gQDuVgkjkkd+hrlpLSdwn36Ow9ClRYzRIlObS3hPmOORg9UDHPuk1run9L2+wSJD8JT6nH0JQsur3cJJIxwPmNZ6Tyaql3v6oTn4qlLfSKnYNNXS7RVyX56Y8dfDOYvmWPmIJ4Hw/Or7aoQt1tjQkuFwMNpb3kYKsDrUqldOPFHGtEJTlJU2KUpVDyKUpQClKUApSlAf/9k=" alt="cod">
+<h4>Cash on Delivery(COD)</h4>
+    </div>
+    <div id="sharath_CDC">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCAA3AEADASIAAhEBAxEB/8QAGwABAQADAQEBAAAAAAAAAAAAAAYEBQcDAQL/xAA4EAABAwMCAwMKAwkAAAAAAAABAgMEAAURBiESEzEHFtIUFTZBUVZhgZOUInSxMkNScXJ1lbTT/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAMBAgT/xAAjEQACAgECBgMAAAAAAAAAAAAAAQIRAxIhBBMiMUFRMsHx/9oADAMBAAIRAxEAPwDuNKVrtQXVNltD9wUwt/lcIDSCAVlSgkAE7dTQGxpUv3h1B7lz/vY3jp3i1B7lz/vY3jrLR1pZUUqX7xag9y5/3sbx18VqO/pSVK0XPAAyT5bG8dLQ0sqaVgWK5ovNnh3JptTSJTQcCF4ynPqOKz605FS/aalS9EXJCElSlBsBI6k8xO1fe0Ur7uJQh11rmzojSlNOKQrhU+hKhxJIIyCRtXMtSPxIEy4xja5MmFDkhla3r3LycAHiKQSABnPyqeTJGKqXkrjxuTteDzOlb/n0fuX10+OndW/+79y+unx1RaNgwr9Pmw50WdHXHabdSpm9y1hQUVDfKh7KrO49l/jun+Wk/wDSovAk6bZ2uI1K1VHMe6t/937l9dPjr8r0tfkoUTYLiAAcnnjx10a7aOtMa0zX2V3RLrUdxaFedZJwQkkfvK21gdW5pGA66tS1qgIUpSjkk8HUmnJj7ZvOfpHl2degtj/Jo/SqOpzs69BbH+TR+lUdeldiEvkyY7RfR9j+5Qv9hupHUlp0u9d7omZf7vGXJcPlMdmKpSMlIBAPKO2PYaq+0t1DGmUvOqCW2p8Na1HolIfQST8qn5WqbVJlOvNa+MRtaspZSy0pKPgCQSfnUskYy2krKY3JK4mVpVGnrAoz2LtcJZuCkxkLkxl5yg9MJbGP2up2+Nbi+62sVimKiXCQ6HW0pU7ymVLS0D04iBgE+zrWjRqizBiOhWv2ytt0rccLbYLqdvwEY2Gx3G+9SurBZLpdZUi16ss7bMx5D7gkKUVNOJAGU4GFAhI2OPXvW3ds50tUorb6/DoCdU2rUNkuzdudc5rcJxamnmi2rgKDhQB6j4isGwWbU0nTVuDOporUdcRvhbNq4ilJSNuLmjO3rqP089YrREmyJupbW7ITa3YUZiK4ojCgCSoqAJUSlOBsBv1rq2kwRpe0gggiG1kH+kVmLVJda3O8iUH09j107a/Mljg2znc/yVlLXN4eHjwOuMnH8s1saUqxB7ilKUApSlAKUpQClKUB/9k=" alt="dccard">
+        <h4>Credit/Debit Card</h4>
+            </div>
+            <div id="sharath_nb">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCABAADMDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAUGBwQD/8QAOBAAAQMDAgQCBgcJAAAAAAAAAQIDBAAFEQYSBxMhMUFhIzZRcaHRFiJVcoGysxQVJTJCY3SRkv/EABkBAQADAQEAAAAAAAAAAAAAAAQBAwUAAv/EACURAAICAQIFBQEAAAAAAAAAAAECAAMRBBITITFBUQVxgdHwFP/aAAwDAQACEQMRAD8A3Gip7VGqmLA7HjpiPzZb4KksMkAhI7kk9B3pGeI0hJwrTM0e+Q186pfUU1na7AH3lq0WuMqpIl7RUEOIsgnA0xOOf77Xzplp/WrV2uabdKtsq3yHElTPOKVJcx3GU9jUJqaHbargn3ktp7VGSpxKuiofiDqS62F9s29RS1yCs5icxJIJ7q3DH+qeaMuM266dizbkhSJDw3EFrl9PDA9nn41duGcSvacZjyiiipnmZbxMkvxdWQFRUtl1yMGk8zO0bnAMnFcWodIzG2BcL+5YQ2ja2HXkOHGT0Hf2munij64Wj7rX6yao+Jpxptg+yfG/OKzn09T2vYw5j6EctrqiIDyP3IKOzHjuNusXSwoW02WkKSw99VHfA8q7dK3B2ZrqJHccjvCK6Ql6OFBKwprd2V16dvwpDegy7OuKHZ6YzyAjkhT+wdsnpnrS2xBMq6JU0txO8try28oKCixkjdnPfIo1ddAbiKuCpHnv4l7G3GwnIYHx2m8an01bdQQ3UzYbLskMrQw8pP12iR0KT4dcGvfS6pitO2/95srZmJYSl5C+4UOnX34zWQJYvBWkKbkpSSMkXRw4FWHDdT7d9u8VcqQ80hppSA86V4JJz3rSS5XbAgnpZVyTNDooopEPMp4o+uFo+61+smqLih6ss/58b84qZ4svNxtU2x99YQ0222paj2SA6Mmu3WerNMX6xiHC1Jb2pCX2nkl7ftOxQODgUXGWcfugiuyH91k9eH0NSEfw+BIKkAlchxCVfEGktoXzNTuLDLLOXkejYUFIT6HwIwPP3k12rnQXCC/qHTLpAwCsOkgf8156XgQr1rExXH2Xoq30+kt61IQrDP8ASehHn55oxqYAAxHEXmZx366Xdm7utIkyI7SVAIS2yCNu4dc4PgSfwxV9wockPXW4OzE7X1w2CsYx4q648OnWnx4cafJyRPPvmufOmtg0vbNPuvu29L3MfADinnlOEgdv5jSq6SrAw1lwZSI6ooopMNM51yoN6zhKcISlUFYBPid4pLeF5gKDTiwN6OYWCOYG9w37fPbmtRu1ltt5bQ3c4bUhKDlG9OSk+VK/oLpn7JY+NY+q9KN+pF4bxyx4mlRrhXTwiPmZ/aVxw7LEN6Qu3cwfsqph9IRgZ79cZz3pjaVoXrKyobUlSgXVEA9hs71X/QbTP2Sx8a7rTpyz2d5T1tgMsOqG0rSnrj2ZqK/Siuq/o3Dr0AnPr1NHCA+Y1ooorZmbCiiiunT/2Q==" alt="Net banking">
+                <h4>Net Banking</h4>
+                    </div>
+                    <div id="sharath_emi">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCAA9ADUDASIAAhEBAxEB/8QAGwABAQEAAwEBAAAAAAAAAAAAAAYHAgQFAwH/xAA4EAABAwMDAgMEBQ0AAAAAAAABAgMEAAURBhIhEzEHFEEiI1FhFVJigbEWMjM0NUJVcXJzkZXS/8QAGQEAAgMBAAAAAAAAAAAAAAAAAAQBAgMF/8QAIhEAAgICAQMFAAAAAAAAAAAAAAIBEQMSIQRRgSIxQbHx/9oADAMBAAIRAxEAPwDcamtfXuVZrO0m3FKZ86QmLHcUncGyQVKWR64SlRx8cVS1H+KMdpenG5ipTEeRBlIkRuu4EJdXgpLefipKlAfPB9KhrqaJir5Mxnot7N3YjTo0ydMdWlPnXn3C5lXru9MfZxj5Vofh9eZYuUzTtxlLlFhhMmI+6rc4poqKVJWfUpUBg98KGe1Z65fbHOEa5JeEaSw4FnqMK6m3BCkHAyeCe2RnFWPhS5EvF2uV9S811uiiKzGz71poKKipY9Nyu3ySKTwS8vz5Gs8JrwaZSlKdFBSlKAFQXjAdlps7gW43tuiD1GUBxxHu3B7CD+cfTGDgZOOKvaiNeXXTj7zdovRnJUwtt9cuIlQEEqylClrHCc5UOc8HmqZF2SV7llmmiSB86n+L6h/0qf8Aive8MXA/rievrypO22IAcmsCO4nLpylKABuTwCVY4OB614lriPTBIfVGvrsdh5bbrMW7IVKY2qIwtpSE8nGcA9vjV1oNnS7UmTLtdxkyLiWw08i4uESGEZztKFAFIzz25wOa5nR9HOLLt6eO3v8AUDWfPulXPn9LilT2ptZWfTXlRcHHlqklXTTHaLpO3Gc47dxX7pbWFq1S5KbtfmAuKEF1L7JbICs4xn+k11hMoKUpQBNa9tNwu9pYat3vejJS6/E66mRKbAOW945HJB+HHNZoY9tjzJQf1HcbGuSx5WRAvMdLnsDOBvXwpOCQDknB71uFcVoStJStIUk9wRkGs8mPf5osrUZfpWx2v6RYuCNSC8SosdLDSmnG04QBgb+ny5xgDeTVDebRZLhtdvUKC90xhLklCTtH8z6V61w0hpu4/rtjt7p+t5dIV/kDNdVjQGkWFbkaet5P22Qv8c0s3SMzbS5pGWIiqMm1zG03Fu1oRp1NtS5h/wAwIakEgYRt3bfvx99Ufgp+3NQ/2Yv4uVWak8PLPfBCDO61+U37PINNoCt2M5BSR+7X30boqJpN+a/Gmy5TktKErMjZwEbsY2pH1jTWNNFhbsyabmyopSlXIFdG+zV26yXCc0lKnI0Zx5KVdiUpJAPy4rvV8ZkVmbEfiSUb2H21NuJyRuSoYIyOexoAjvyxnRYVqlzWmHGZkhSXi3HdaLTQRuKsL5O3kk9iBxXFGuJEi5yWo0ZkxEXGJFZcUDlxDqlJUvg47pyn5EVRsactbKGUBhxxDBUWw/IcdCdyNih7ajxt4x2odN2jqh0QkpUFsLG1akgFn9HgA4ATnt2+OaAPWpSlAClKUAf/2Q==" alt="emi">
+                        <h4>EMI</h4>
+                            </div>
+                            <div id="sharath_upi">
+                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCABAADUDASIAAhEBAxEB/8QAGgAAAwEBAQEAAAAAAAAAAAAAAAUGBAIDB//EADUQAAEDAwIDBAcIAwAAAAAAAAEAAgMEBRESIQYTURQiMUEyNWFxcoGhFTM2QlJVc5GkscH/xAAaAQADAQADAAAAAAAAAAAAAAACBAUDAAEG/8QALREAAgIAAwQIBwAAAAAAAAAAAQIAAwQRIRJRgZEFEyIxQVLB0RQjJENhcfD/2gAMAwEAAhEDEQA/APuKRV/EQZWvoLVRy3CrZ942MgMi+Jx2HuW6/wBW+gsldVxY5kUD3Nz1A2UtHYeVbaTtcz47TFT9pquW8h88p3OrG5CysYjQTWtQdTK62y1k1MH19Mynmz6DZNYx71qSClu9znha+lszjD4ML5gCR816/aN5/Zf8hq6W5CMxmeB9pxqmz8OY946QldmvAuL5oJIHQVEPpxk526potEdXXaXugMpQ5NBCEIoMEr4o/D1w/gd/pNFG8THtN4fT1j3CnZEHRsJ7rj5nHmlsZcKqSxH45zfDVmywCUlj9U0vwLcpiC71VFb4Yae3z1DjCzlOZG4tLiSDqIGABsuhdOIGysiqrZDG/mtAMMhka9p8dyBjCOo7NSk7hAsGdjcYqvFIyW4Vs5DhLGe45pwR5qutEzqi2Usz3anOiaXHqcbqaqHZu1ZGR4nJW3herMEslql/KDJAerc7j5E/VTcHaExLqfEnnmY9iULUqd2XLKUiEIViTYKMv+GcQTGRvNBgbgDfR4qzUfxAx0V/JhILpoAXB3ljZT+kx9Of2I5gT87gZRWP1RS/AtyWWQvfaoCx+AG4xpXrQVMtZE5+HxaXFuJI8E480zTYvVoN4mNqHbY7jJyo9c1nvXIJju1tmbsRPpPtDgR/1d1LdN4q+9q3GSFw0GW7W6Bm7udrPsa3cn6fVQhn8Rp5vWVPt6+X0lmhCF6SRYJfdLPS3PQ6fW17PRfG7Bx0TBCFkVxssMxCVipzU5GSdz4WEEHOtz5pXMOXQvcDrHsOPFKYewS5Bkcx7dnMecOaehHkvoSz1NDR1Tg6qpYJnDwMkYcR/an39Go5zTs8NI3VjXUZPrxkXTkSTto7UGyzuPePiGDq7oqezWZtvc+eaTnVcgw6TGA0dGjyCYwU8NMzRTwxxM/TG0NH9Bei1w2BSntHU/3dAuxTWaDQQQhCdis//9k=" alt="upi">
+                                <h4>UPI</h4>
+                                    </div>
+                                    <div id="sharath_sim">
+                                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5Ojf/2wBDAQoKCg0MDRoPDxo3JR8lNzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzf/wAARCAA5AD0DASIAAhEBAxEB/8QAGgABAAMAAwAAAAAAAAAAAAAAAAQFBgIDB//EACkQAAICAgEDAgUFAAAAAAAAAAECAAMEEQUSMVFBYQYUISIyExVCobH/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAQIEAwUG/8QAJhEAAgIBAgUEAwAAAAAAAAAAAAECAxEFEgQTITHRQZHB8VFx8P/aAAwDAQACEQMRAD8A9xiIgCIiAIiIAiIgHTl5KYtP6jgsSQFVRssT2AlP+/MLijHCLDvSuQese29dJPtucviVrFQGvYK0WshHo2gP8LTB8YK25Chbk60LgETRVUpRyz5/UtStovjVD1PVMe5b6EuTYV1DDqGjOSurjaMG14O5Xql2bwbVLZ02sjVh/cEjf9Sqx8pOMpNFOEmLmCytbV/IOp+nUDOShnOD05cXy9rkujWc/C+zTxM0nK8rYa2r+V6Lb2pUFTsa9T9Z2pyXI2fL46tji97bK3coen7fUDcnlshahW+yft+vJoIlBi5t+Tn4C3kB0a5LAn4sV0Ny/lZR2mii+Nybj6eE/kqfiLHtyMWtag6gPtrKh1Og0RsD18H2mb4rhBVlrZVY2Tap+wLUyqp8sWA7eJuolo2uKwjJxGnV33K2Xdf35x7pkZMOsYIxH2ydPSx3onyZGq4TCrQrqxyWVi72Fm+nYb8SyiU3M2OiqWMxTx0IdfGY1YrCq2q7Dav3fyPeRMvha78igoXStXexyrkN1NrsZbxJUmisuGqlHa49PH0Qa+KxKhjCtGU45LIQx3s99+dydESG2+50hXCHSKwIiJBcREQBERAEREA//9k=" alt="sim">
+                                        <h4>Simpl Pay</h4>
+                                            </div>
+</div>
+<button id="sharath_placeorder" > PLACE ORDER</button>
+
+</div>
+</div>
+
+<div id="sharath_right"></div>
+<div id=" ">
+
+</div>
+
+                                             
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
