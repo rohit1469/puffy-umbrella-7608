@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #ajContainer {
+        display: grid;
+        grid-template-columns: 1280px;
+        row-gap: 50px;
+        margin: auto;
+        margin-top: 190px;
+        width: 1280px;
+        border: 1px solid red;
+    }
+</style>
+
+<body>
+    <div id="ajContainer">
+        <div id="first_line_div">
+            <p id='first_line'>Fast moving products </p>
+            <div id="line"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper1 = new Swiper(".mySwiper", {
+
+        spaceBetween: 30,
+        loop: true,
+        speed: 1000,
+        //   pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        //   },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+            },
+        },
+
+    });
+</script>
