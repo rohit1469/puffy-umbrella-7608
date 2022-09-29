@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style/flashsale.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
 </head>
+
 <body>
+
+    <div id="head_navbar"></div>
     <div class="container">
         <div class="sidebar">
-            <div id="filter"><p>FILTER</p></div>
-            <div><hr></div>
+            <div id="filter">
+                <p>FILTER</p>
+            </div>
+            <div>
+                <hr>
+            </div>
             <div class="brands" onclick="brand()">
                 <div>
                     <p>BRANDS</p>
-                    <div><img onclick="brand()" src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" id="dropdowncustom"></div>
+                    <div><img onclick="brand()" src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png"
+                            id="dropdowncustom"></div>
                 </div>
                 <div id="brand_name">
                     <input type="checkbox" name="" id="">
@@ -51,16 +62,18 @@
                     <input type="checkbox" name="" id="">
                     <label for="">Xiaomi</label><br>
                     <input type="checkbox" name="" id="">
-                    <label for="">Zeblaze</label> 
+                    <label for="">Zeblaze</label>
                 </div>
             </div>
-            <div><hr></div>
+            <div>
+                <hr>
+            </div>
             <div class="colors" onclick="color()">
                 <div>
                     <p>COLORS</p>
-                    <div><img  src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" id="dropdowncustom"></div>
+                    <div><img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" id="dropdowncustom"></div>
                 </div>
-                <div id="color_name" >
+                <div id="color_name">
                     <input type="checkbox" name="" id="">
                     <label for="">Beige</label><br>
                     <input type="checkbox" name="" id="">
@@ -107,18 +120,18 @@
                     <label for="">Yellow</label><br>
                 </div>
             </div>
-
-            
         </div>
         <div class="separator"></div>
         <div class="flashsale_product">
             <div class="flash_heading">
-                <div><a href="index.html">Home</a><span>></span><a href="flashsale.html">Flash Sale</a><span>></span>Flash Sale</div>
+                <div><a href="index.html">Home</a><span>></span><a href="flashsale.html">Flash
+                        Sale</a><span>></span>Flash Sale</div>
                 <div class="search">
                     <div onclick="dropdownwhatsnew()">
                         <div class="whatnew">What's New</div>
                         <div class="separator-whatsnew"></div>
-                        <div><img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" class="dropdowncustom" "></div>
+                        <div><img src="https://cdn-icons-png.flaticon.com/512/2985/2985150.png" class="dropdowncustom">
+                        </div>
                     </div>
                     <div id="dropdown">
                         <ul>
@@ -131,14 +144,55 @@
                         </ul>
                     </div>
                 </div>
-                
+
             </div>
             <div id="main_container">
 
             </div>
         </div>
     </div>
+    <div id="bottom_footer"></div>
 </body>
-</html>
-<script src="./script/flashsale.js"></script>
 
+</html>
+<script type="module" src="./script/flashsale.js"></script>
+<script>
+    var num = 1;
+    var num1 = 1;
+    const color = () => {
+        let color = document.getElementById("color_name");
+        // console.log("working")
+        if (num % 2 != 0) {
+            color.style.display = "block";
+            num++;
+        } else {
+            color.style.display = "none";
+            num++;
+        }
+    };
+    const brand = () => {
+        // console.log("working")
+        let brand = document.getElementById("brand_name");
+        if (num1 % 2 != 0) {
+            brand.style.display = "block";
+            num1++;
+        } else {
+            brand.style.display = "none";
+            num1++;
+        }
+    };
+    var num2 = 1;
+
+    const dropdownwhatsnew = () => {
+        let dropdown = document.getElementById("dropdown");
+        // console.log("working")
+        if (num2 % 2 != 0) {
+            dropdown.style.display = "block";
+            num2++;
+        } else {
+            dropdown.style.display = "none";
+            num2++;
+        }
+    };
+
+</script>

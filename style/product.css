@@ -1,208 +1,195 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
 
 #aj_Container {
-    display: grid;
-    grid-template-columns: 1280px;
-    row-gap: 10px;
-    margin: auto;
-    margin-top: 190px;
-    width: 1280px;
-    height: 100vh;
-
+  display: grid;
+  grid-template-columns: 100%;
+  row-gap: 10px;
+  margin: auto;
+  /* margin-top: 190px; */
+  width: 85%;
+  /* margin-top: 20px; */
+  height: auto;
 }
 
 #aj_first_line_div {
-    display: flex;
-    height: fit-content;
-
+  display: flex;
+  height: fit-content;
+  margin-top: 150px;
 }
 
 #aj_first_line {
-
-    font-size: 20px;
-    font-weight: 700;
-    height: fit-content;
-
+  font-size: 20px;
+  font-weight: 700;
+  height: fit-content;
 }
 
 #aj_line {
-    width: 85%;
-    height: 0.1px;
-    border: 0.5px solid #7F7F7F;
-    margin-top: 12px;
-    margin-left: 2px;
-
+  width: 84%;
+  height: 0.1px;
+  border: 0.5px solid #7f7f7f;
+  margin-top: 32px;
+  margin-left: 2px;
 }
-
-
 
 /* -------------p1----------------- */
 
 .aj_first {
-
-
-    width: 100%;
-    height: 411px;
-    /* border: 5px solid green; */
-
+  width: 100%;
+  height: 411px;
+  /* border: 5px solid green; */
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    color: #f7941d;
+  color: #f7941d;
 }
 
 .aj_first .swiper-slide img {
-    width: 320px;
-    height: 320px;
+  width: 320px;
+  height: 320px;
 }
 
-
 #aj_brand {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    height: 42px;
-    /* border: 1px solid red; */
-    border-bottom: 3px solid #ECEFF1;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: 42px;
+  /* border: 1px solid red; */
+  border-bottom: 3px solid #eceff1;
 }
 
 #aj_price {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    height: 30px;
-    /* border: 1px solid blue */
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  height: auto;
+  /* border: 1px solid blue */
 }
 
 #aj_price p {
-    color: #008a00;
+  color: #008a00;
 
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #aj_span {
-    background-color: #3cc101;
-    font-size: 12px;
-    color: white;
-    font-family: sans-serif;
-    height: 50%;
-    width: 53px;
-    text-align: center;
-    margin-top: 15px;
-    padding-top: 4px;
-
+  background-color: #3cc101;
+  font-size: 12px;
+  color: white;
+  font-family: sans-serif;
+  height: 50%;
+  width: 53px;
+  text-align: center;
+  margin-top: 15px;
+  padding-top: 4px;
 }
 
 /* ---------------------line_2----------------------- */
 
 #aj_second_line_div {
-    display: flex;
-
+  display: flex;
 }
 
 #aj_line2 {
-    width: 86%;
-    height: 0.5px;
-    border: 0.5px solid #7F7F7F;
-    margin-top: 13px;
-    margin-left: 2px;
+  width: 86%;
+  height: 0.5px;
+  border: 0.5px solid #7f7f7f;
+  margin-top: 32px;
+  margin-left: 2px;
 }
 
 #aj_see_more {
-    background-color: white;
-    color: #52666F;
-    margin-top: 0.3%;
-    margin-left: 3px;
-    font-size: 16px;
-    font-weight: 500;
-    width: 66px;
-    /* border: 1px solid red; */
-
+  background-color: white;
+  color: #52666f;
+  margin-top: 22px;
+  margin-left: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 66px;
+  /* border: 1px solid red; */
 }
-
 
 /* ------------------line_3------------------ */
 #aj_line3 {
-    width: 81.7%;
-    height: 0.5px;
-    border: 0.5px solid #7F7F7F;
-    margin-top: 13px;
-    margin-left: 2px;
+  width: 81.7%;
+  height: 0.5px;
+  border: 0.5px solid #7f7f7f;
+  margin-top: 32px;
+  margin-left: 2px;
 }
 
 /* ------------------------line_4----------------- */
 #aj_line4 {
-    width: 82.7%;
-    height: 0.5px;
-    border: 0.5px solid #7F7F7F;
-    margin-top: 13px;
-    margin-left: 2px;
+  width: 82.7%;
+  height: 0.5px;
+  border: 0.5px solid #7f7f7f;
+  margin-top: 32px;
+  margin-left: 2px;
 }
 
 /* -------------------------line-5-------------- */
 #aj_line5 {
-    width: 97%;
-    height: 0.5px;
-    border: 0.5px solid #7F7F7F;
-    margin-top: 13px;
-    margin-left: 2px;
+  width: 97%;
+  height: 0.5px;
+  border: 0.5px solid #7f7f7f;
+  margin-top: 32px;
+  margin-left: 2px;
 }
 
 /* -------------------------line-6-------------- */
 #aj_line6 {
-    width: 97%;
-    height: 0.5px;
-    border: 0.5px solid #7F7F7F;
-    margin-top: 13px;
-    margin-left: 2px;
+  width: 97%;
+  height: 0.5px;
+  border: 0.5px solid #7f7f7f;
+  margin-top: 32px;
+  margin-left: 2px;
 }
 
 /* -------------------------line-7-------------- */
 #aj_line7 {
-    width: 81%;
-    height: 0.5px;
-    border: 0.5px solid #7F7F7F;
-    margin-top: 13px;
-    margin-left: 2px;
+  width: 81%;
+  height: 0.5px;
+  border: 0.5px solid #7f7f7f;
+  margin-top: 32px;
+  margin-left: 2px;
 }
 
 /* -------------------------line-8-------------- */
 #aj_line8 {
-    width: 80%;
-    height: 0.5px;
-    border: 0.5px solid #7F7F7F;
-    margin-top: 13px;
-    margin-left: 2px;
+  width: 80%;
+  height: 0.5px;
+  border: 0.5px solid #7f7f7f;
+  margin-top: 32px;
+  margin-left: 2px;
 }
 
 /* -------------------------line-9-------------- */
 #aj_line9 {
-    width: 80%;
-    height: 0.5px;
-    border: 0.5px solid #7F7F7F;
-    margin-top: 13px;
-    margin-left: 2px;
+  width: 80%;
+  height: 0.5px;
+  border: 0.5px solid #7f7f7f;
+  margin-top: 32px;
+  margin-left: 2px;
 }
 
 /* -------------------------line-10-------------- */
 #aj_line10 {
-    width: 84%;
-    height: 0.5px;
-    border: 0.5px solid #7F7F7F;
-    margin-top: 13px;
-    margin-left: 2px;
+  width: 84%;
+  height: 0.5px;
+  border: 0.5px solid #7f7f7f;
+  margin-top: 32px;
+  margin-left: 2px;
 }
 
 /* -------------------------line-11-------------- */
 #aj_line11 {
-    width: 82%;
-    height: 0.5px;
-    border: 0.5px solid #7F7F7F;
-    margin-top: 13px;
-    margin-left: 2px;
+  width: 82%;
+  height: 0.5px;
+  border: 0.5px solid #7f7f7f;
+  margin-top: 32px;
+  margin-left: 2px;
 }

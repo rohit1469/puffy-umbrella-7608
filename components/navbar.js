@@ -149,10 +149,11 @@ const navbar = () => {
         </div>
     </li>
 
-    <li><a href="">Flash Sale</a></li>
-    <li><a href="">Shop by brand</a></li>
-    <li><a href="">Trending</a></li>
-    <li><a href="">New Arrival</a></li>
+    <li><a href="flashsale.html">Flash Sale</a></li>
+    <li><a href="bestdeals.html">Best deals</a></li>
+    <li><a href="shopbybrand.html">Shop by brand</a></li>
+    <li><a href="flashsale.html">Trending</a></li>
+    <li><a href="bestdeals.html">New Arrival</a></li>
 
 </div>`;
 };
