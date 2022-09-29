@@ -5,9 +5,10 @@ body {
 }
 
 #head_navbar {
-  width: 100%;
+  border: 1px solid;
+  width: 99vw;
   height: 140px;
-  position: fixed;
+  position: sticky;
   top: 1;
   z-index: 9999;
   background-color: white;
@@ -99,7 +100,7 @@ body {
 }
 
 #row2mid {
-  width: 460px;
+  width: 490px;
   height: 60px;
   display: flex;
   align-items: center;

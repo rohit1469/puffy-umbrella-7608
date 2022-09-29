@@ -1,3 +1,15 @@
+import { navbar } from "../components/navbar.js";
+
+let navbar_div = document.getElementById("head_navbar");
+
+navbar_div.innerHTML = navbar();
+
+import { footer } from "../components/footer.js";
+let footer_div = document.getElementById("bottom_footer");
+footer_div.innerHTML = footer();
+
+
+
 let data=[{
     image:"https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMTQ0XC9XaGl0ZV9uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
     title:"Xiaomi Mi LED Desk Lamp Pro",
