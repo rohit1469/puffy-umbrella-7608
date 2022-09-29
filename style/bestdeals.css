@@ -9,7 +9,32 @@
     gap: 5px;
 }
 .sidebar{
-    width: 25%;
+    width: 35%;
+}
+#filter{
+    color: #455a64;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.separator{
+    width: 1.5px;
+    height: auto;
+    background: #D3E2EB;
+}
+li a{
+    color: #455a64;
+}
+li:hover{
+    display: inline;
+    border-bottom:1px solid #455a64;
+}
+#sidebar_features{
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: -15px;
+    margin-left: 20px;
 }
 #main_container{
     width: 85%;
@@ -35,7 +60,7 @@
     font-size: 18px;
     color: white;
     margin-top: -15px;
-    margin-left: 320px;
+    margin-left: 335px;
     background-color: rgb(60,193,1);
     padding: 4px 13px;
     border-radius: 10px;    
