@@ -193,3 +193,37 @@
   margin-top: 32px;
   margin-left: 2px;
 }
+
+
+/* ----------------scroll--------------------- */
+
+
+.bigslide {
+
+  height: 400px;
+  width: 100%;
+  margin-top: 190px;
+
+}
+
+.container {
+  margin: 5%;
+
+}
+
+/* The dots/bullets/indicators bigslide*/
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: rgb(105, 105, 218);
+}
+
+/* --------------------scroll-------------------- */
