@@ -223,6 +223,11 @@ const displaydata = () => {
   data.forEach((ele) => {
     let div = document.createElement("div");
     div.id = "main_div";
+    div.addEventListener("click",()=>{
+      localStorage.setItem("flashsales_data",JSON.stringify({...ele}));
+      window.location.href="flashsales_productDetails.html";
+      // console.log("WOrking");
+    })
     let div1 = document.createElement("div");
     let img = document.createElement("img");
     img.id = "image";
