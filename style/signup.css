@@ -82,12 +82,13 @@ img{
 }
 #rohit_rightpart{
    width: 30%;
-   /* border: 1px solid black; */
+   border: 1px solid black;
    height: 100%; 
+   margin-top: 150px;
 }
 #rohit_cartitem{
-    border: 1px solid rgb(151, 150, 150);
-    margin-top: 20px;
+    /* border: 1px solid rgb(151, 150, 150); */
+    margin-top: 30px;
 
 }
 
@@ -179,3 +180,212 @@ input{
     margin: auto;
     /* text-decoration-thickness: lighter; */
 }
+body {
+    margin: 0px;
+    padding: 0px;
+    z-index: 9000;
+  }
+  
+  #rohit_head_navbar {
+    width: 100%;
+    height: 140px;
+    position: fixed;
+    top: 1;
+    z-index: 9999;
+    background-color: white;
+  }
+  #rohit_row1 {
+    width: 100%;
+    height: 24px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    font-family: sans-serif;
+  }
+  
+  #rohit_row1 > p:nth-child(1) {
+    color: white;
+    margin-left: 480px;
+    letter-spacing: normal;
+  }
+  #rohit_row1 > p:nth-child(2) {
+    color: #bc522f;
+    margin-left: 5px;
+    letter-spacing: normal;
+  }
+  
+  #rohit_row1 > img:nth-child(3) {
+    margin-left: 450px;
+  }
+
+  .rohit_navbarlogo {
+    width: 1%;
+    height: 60%;
+    margin-left: 10px;
+  }
+  .rohit_navbarlogo + p {
+    margin-left: 10px;
+    color: white;
+  }
+  
+  #rohit_row2 {
+    width: 100%;
+    height: 90px;
+    display: flex;
+  }
+  #rohit_row2left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  #rohit_imgLogo {
+    width: 185px;
+    height: 60px;
+    margin-left: 60px;
+  }
+  
+  #rohit_searchbox {
+    width: 355px;
+    border: 1px solid rgba(0, 0, 0, 0.485);
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+  }
+  .rohit_searchB {
+    width: 100%;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+  }
+  #rohit_inputsearch {
+    font-size: 16px;
+    width: 292px;
+    padding-left: 15px;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+  }
+  #rohit_searchlogo {
+    width: 24px;
+    height: 18px;
+    margin: auto;
+  }
+  
+  #rohit_row2mid {
+    width: 460px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-left: 350px;
+  }
+  #rohit_links {
+    display: flex;
+    width: 280px;
+    height: 15px;
+    font-size: 14px;
+    gap: 2px;
+    margin-left: 2px;
+  }
+  #rohit_log {
+    width: 150px;
+    height: 20px;
+    margin-left: 20px;
+  }
+  #rohit_smalllogin {
+    width: 145px;
+    display: flex;
+    gap: 2px;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  .rohit_navlogin {
+    color: black;
+    text-decoration: none;
+  }
+  #rohit_log2 {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+  }
+  #rohit_loginLogo {
+    width: 15px;
+    height: 18px;
+  }
+  .rohit_cartimg {
+    width: 24px;
+    height: 24px;
+    margin-top: 30px;
+  }
+  #rohit_cart {
+    display: flex;
+    margin-left: 25px;
+  }
+  #rohit_carIm {
+    display: flex;
+  }
+  #rohit_cartcount {
+    margin-top: 25px;
+  }
+  
+  #rohit_row3 {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.182);
+    padding-left: 180px;
+    margin-top: -20px;
+  }
+  
+  #rohit_row3 > li {
+    list-style-type: none;
+    margin: 15px 20px;
+  }
+  #rohit_row3 > li > a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+  #rohit_row3 > li > a:hover {
+    border-bottom: 3px solid rgb(253, 216, 53);
+    padding-bottom: 10px;
+  }
+  
+ 
+  #dropdown_list {
+    display: flex;
+    
+    position: absolute;
+    background-color: #ffffff;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(227, 224, 224, 0.848);
+    margin-top: 12px;
+    width: 1200px;
+    margin-right: 30%;
+    visibility: hidden;
+    border-top: none;
+  }
+  #dropdown_list > ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  #dropdown_list > ul > li > a {
+    text-decoration: none;
+    line-height: 24px;
+    cursor: pointer;
+    color: black;
+    font-size: 13px;
+  }
+  #rohit_row3 > li:hover #dropdown_list {
+    visibility: visible;
+  }
+  h4 {
+    margin-top: -16px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }

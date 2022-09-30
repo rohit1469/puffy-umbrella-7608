@@ -1,15 +1,15 @@
 #rohit_login_page{
-    width: 99vw;
-    height: auto;
+  width: 99vw;
+  height: auto;
 }
 #rohit_main{
-    width: 87vw;
-    margin:140px auto;
-    border:0.1ch solid grey;
-    display: flex;
-    height:80vh;
-    justify-content: space-evenly;
-    /* text-decoration-thickness: 0.1em; */
+  width: 87vw;
+  margin:140px auto;
+  border:0.1ch solid grey;
+  display: flex;
+  height:80vh;
+  justify-content: space-evenly;
+  /* text-decoration-thickness: 0.1em; */
 }
 #rohit_leftpart{
 /* border: 1px solid black; */
@@ -19,371 +19,342 @@ height: 80vh;
 
 }
 #rohit_leftpart>h3{
-    color: orange;
-    font-size: 20px;
+  color: orange;
+  font-size: 20px;
 }
 #rohit_leftpart>p{
- text-align: center;
+text-align: center;
 }
 #rohit_Login{
-  
-    background-color: orange;
-    color: white;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 19px;
-    border: none;
-    cursor: pointer;
+
+  background-color: orange;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 19px;
+  border: none;
+  cursor: pointer;
 }
 #rohit_login{
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-    /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  /* border: 1px solid black; */
 }
 #rohit_facebook{
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-    cursor: pointer;
-    width: 53%;
-    height: 22px;
-    display: flex;
-    justify-content: space-evenly;
-    /* border: 1px solid black; */
-    background-color:#4965b5;
-    border-radius: 2px;
-    color: white;
-    font-size: medium;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  cursor: pointer;
+  width: 53%;
+  height: 22px;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  background-color:#4965b5;
+  border-radius: 2px;
+  color: white;
+  font-size: medium;
 }
 #rohit_facebook>div{
-    margin: 2px auto;
+  margin: 2px auto;
 }
 #rohit_google{
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-    cursor: pointer;
-    width: 40%;
-    height: 22px;
-    display: flex;
-    justify-content: space-between;
-  
-    background-color:#4285f4;
-    border-radius: 2px;
-    color: white;
-    font-size:15px;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+  cursor: pointer;
+  width: 40%;
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+
+  background-color:#4285f4;
+  border-radius: 2px;
+  color: white;
+  font-size:15px;
 }
 #rohit_gimg{
 
-    width: 18%;
-    margin: 0.5%;
-    margin-left: 1px;
-    }
-    #rohit_gimg+div{
-        width: 75%;
-        text-align: center;
-        padding-top: 2px;
-    }
-    
-    
+  width: 18%;
+  margin: 0.5%;
+  margin-left: 1px;
+  }
+  #rohit_gimg+div{
+      width: 75%;
+      text-align: center;
+      padding-top: 2px;
+  }
+  
+  
 #rohit_gimg img{
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 #rohit_rightpart{
-   width: 30%;
-   /* border: 1px solid black; */
-   height: 80vh; 
+ width: 30%;
+ /* border: 1px solid black; */
+ height: 80vh; 
 }
 #rohit_cartitem{
-    border: 1px solid rgb(151, 150, 150);
-    margin-top: 20px;
+  border: 1px solid rgb(151, 150, 150);
+  margin-top: 20px;
 
 }
 .rohit_input{
-    margin-top: 5px;
-    width:100%;
-    height: 40px;
-    /* border-radius: 10px; */
+  margin-top: 5px;
+  width:100%;
+  height: 40px;
+  /* border-radius: 10px; */
 }
 #rohit_editbtn{
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    border: 1px solid  salmon;
-    padding:5px;
-    color: rgb(211, 140, 7);
-    cursor: pointer;
-    font-size: 15pxrohit_;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  border: 1px solid  salmon;
+  padding:5px;
+  color: rgb(211, 140, 7);
+  cursor: pointer;
+  font-size: 15pxrohit_;
 
 }
 #rohit_rightpart>div>h4{
-   color: rgb(75, 72, 72);
-   text-align: center;
-   font-size: 20px;
+ color: rgb(75, 72, 72);
+ text-align: center;
+ font-size: 20px;
 }
 .rohit_gray{
-    color: rgb(75, 72, 72);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-left: 20px;
-    margin-top: 20px;
+  color: rgb(75, 72, 72);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 .rohit_banner>img{
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 .rohit_banner{
-    text-align: center;
-    margin-top:10px;
+  text-align: center;
+  margin-top:10px;
 }
 .rohit_orangebar{
-    width: 12%;
-    height: 4px;
-    margin:auto;
-    background-color: rgb(255, 111, 0);
+  width: 12%;
+  height: 4px;
+  margin:auto;
+  background-color: rgb(255, 111, 0);
 }
 #rohit_underline{
-    border: 0.1px solid rgb(242, 240, 240);
+  border: 0.1px solid rgb(242, 240, 240);
 }
 #rohit_belowtotal{
-    border: 0.1px solid rgb(242, 240, 240);
-    width: 93%;
-    margin: auto;
+  border: 0.1px solid rgb(242, 240, 240);
+  width: 93%;
+  margin: auto;
 }
 .rohit_alreadyhave a{
-    text-decoration: underline;
-    color: #111;
+  text-decoration: underline;
+  color: #111;
 }
 #rohit_hover:hover{
-    cursor: pointer;
-    color:rgb(255, 111, 0);
+  cursor: pointer;
+  color:rgb(255, 111, 0);
 }
 
 #rohit_Totalitems{
-    color: rgb(153, 27, 27);
+  color: rgb(153, 27, 27);
 }
 #rohit_Total{
-    color: rgb(153, 27, 27);
+  color: rgb(153, 27, 27);
 }
 #rohit_Subtotal{
-    color: rgb(32, 119, 166);
+  color: rgb(32, 119, 166);
 }
 #rohit_line{
-    /* font-size: 10px; */
-    /* border: 0.01rem solid rgb(255, 111, 0); */
-    width: 100%;
-    border:0.01mm solid rgb(255, 111, 0);
-    margin: auto;
-    /* text-decoration-thickness: lighter; */
+  /* font-size: 10px; */
+  /* border: 0.01rem solid rgb(255, 111, 0); */
+  width: 100%;
+  border:0.01mm solid rgb(255, 111, 0);
+  margin: auto;
+  /* text-decoration-thickness: lighter; */
 }
 body {
-    margin: 0px;
-    padding: 0px;
-    z-index: 9000;
-  }
-  
-  #head_navbar {
-    width: 100%;
-    height: 140px;
-    position: fixed;
-    top: 1;
-    z-index: 9999;
-    background-color: white;
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.182); */
-  }
-  #row1 {
-    width: 100%;
-    height: 24px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    background-color: black;
-    font-family: sans-serif;
-  }
-  
-  #row1 > p:nth-child(1) {
-    color: white;
-    margin-left: 480px;
-    letter-spacing: normal;
-  }
-  #row1 > p:nth-child(2) {
-    color: #bc522f;
-    margin-left: 5px;
-    letter-spacing: normal;
-  }
-  
-  #row1 > img:nth-child(3) {
-    margin-left: 450px;
-  }
-  /* 
-  #row1 > img:nth-child(5) {
-    border-right: 3px solid white;
-  } */
-  .navbarlogo {
-    width: 1%;
-    height: 60%;
-    margin-left: 10px;
-  }
-  .navbarlogo + p {
-    margin-left: 10px;
-    color: white;
-  }
-  
-  #row2 {
-    width: 100%;
-    height: 90px;
-    display: flex;
-  }
-  #row2left {
-    width: 40%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-  
-  #imgLogo {
-    width: 185px;
-    height: 60px;
-    margin-left: 60px;
-  }
-  
-  #searchbox {
-    width: 355px;
-    border: 1px solid rgba(0, 0, 0, 0.485);
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-  }
-  .searchB {
-    width: 100%;
-    margin-top: 2px;
-    display: flex;
-    flex-direction: row;
-  }
-  #inputsearch {
-    font-size: 16px;
-    width: 292px;
-    padding-left: 15px;
-    border: none;
-    text-decoration: none;
-    /* display: flex;
-    flex-direction: row; */
-    align-items: center;
-  }
-  #searchlogo {
-    width: 24px;
-    height: 18px;
-    margin: auto;
-  }
-  
-  #row2mid {
-    width: 460px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    margin-left: 350px;
-  }
-  #links {
-    display: flex;
-    width: 280px;
-    height: 15px;
-    font-size: 14px;
-    gap: 2px;
-    margin-left: 2px;
-  }
-  #log {
-    width: 150px;
-    height: 20px;
-    margin-left: 20px;
-  }
-  #smalllogin {
-    width: 145px;
-    display: flex;
-    gap: 2px;
-    font-family: sans-serif;
-    font-size: 14px;
-  }
-  .navlogin {
-    color: black;
-    text-decoration: none;
-  }
-  #log2 {
-    font-weight: bold;
-    font-family: sans-serif;
-    font-size: 15px;
-  }
-  #loginLogo {
-    width: 15px;
-    height: 18px;
-  }
-  .cartimg {
-    width: 24px;
-    height: 24px;
-    margin-top: 30px;
-  }
-  #cart {
-    display: flex;
-    margin-left: 25px;
-  }
-  #carIm {
-    display: flex;
-  }
-  #cartcount {
-    margin-top: 25px;
-  }
-  
-  #row3 {
-    display: flex;
-    align-items: center;
-    font-family: sans-serif;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.182);
-    padding-left: 180px;
-    margin-top: -20px;
-  }
-  
-  #row3 > li {
-    list-style-type: none;
-    margin: 15px 20px;
-  }
-  #row3 > li > a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-  }
-  #row3 > li > a:hover {
-    border-bottom: 3px solid rgb(253, 216, 53);
-    padding-bottom: 10px;
-    /* visibility: visible; */
-  }
-  
-  /* navbar middle section dropdown list style */
-  #dropdown_list {
-    display: flex;
-    /* list-style-type: none; */
-    position: absolute;
-    background-color: #ffffff;
-    text-transform: capitalize;
-    border-bottom: 1px solid rgba(227, 224, 224, 0.848);
-    margin-top: 12px;
-    width: 1200px;
-    margin-right: 30%;
-    visibility: hidden;
-    border-top: none;
-  }
-  #dropdown_list > ul {
-    list-style-type: none;
-    padding: 10px;
-    margin-left: 10px;
-  }
-  #dropdown_list > ul > li > a {
-    text-decoration: none;
-    line-height: 24px;
-    cursor: pointer;
-    color: black;
-    font-size: 13px;
-  }
-  #row3 > li:hover #dropdown_list {
-    visibility: visible;
-  }
-  h4 {
-    margin-top: -16px;
-    margin-bottom: 10px;
-    font-size: 15px;
-  }
+  margin: 0px;
+  padding: 0px;
+  z-index: 9000;
+}
+
+#rohit_head_navbar {
+  width: 100%;
+  height: 140px;
+  position: fixed;
+  top: 1;
+  z-index: 9999;
+  background-color: white;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.182); */
+}
+#rohit_row1 {
+  width: 100%;
+  height: 24px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+#rohit_row1 > p:nth-child(1) {
+  color: white;
+  margin-left: 480px;
+  letter-spacing: normal;
+}
+#rohit_row1 > p:nth-child(2) {
+  color: #bc522f;
+  margin-left: 5px;
+  letter-spacing: normal;
+}
+
+#rohit_row1 > img:nth-child(3) {
+  margin-left: 450px;
+}
+/* 
+#row1 > img:nth-child(5) {
+  border-right: 3px solid white;
+} */
+.rohit_navbarlogo {
+  width: 1%;
+  height: 60%;
+  margin-left: 10px;
+}
+.rohit_navbarlogo + p {
+  margin-left: 10px;
+  color: white;
+}
+
+#rohit_row2 {
+  width: 100%;
+  height: 90px;
+  display: flex;
+}
+#rohit_row2left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#rohit_imgLogo {
+  width: 185px;
+  height: 60px;
+  margin-left: 60px;
+}
+
+#rohit_searchbox {
+  width: 355px;
+  border: 1px solid rgba(0, 0, 0, 0.485);
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.rohit_searchB {
+  width: 100%;
+  margin-top: 2px;
+  display: flex;
+  flex-direction: row;
+}
+#rohit_inputsearch {
+  font-size: 16px;
+  width: 292px;
+  padding-left: 15px;
+  border: none;
+  text-decoration: none;
+  /* display: flex;
+  flex-direction: row; */
+  align-items: center;
+}
+#rohit_searchlogo {
+  width: 24px;
+  height: 18px;
+  margin: auto;
+}
+
+#rohit_row2mid {
+  width: 460px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-left: 350px;
+}
+#rohit_links {
+  display: flex;
+  width: 280px;
+  height: 15px;
+  font-size: 14px;
+  gap: 2px;
+  margin-left: 2px;
+}
+#rohit_log {
+  width: 150px;
+  height: 20px;
+  margin-left: 20px;
+}
+#rohit_smalllogin {
+  width: 145px;
+  display: flex;
+  gap: 2px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+.rohit_navlogin {
+  color: black;
+  text-decoration: none;
+}
+#rohit_log2 {
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+#rohit_loginLogo {
+  width: 15px;
+  height: 18px;
+}
+.rohit_cartimg {
+  width: 24px;
+  height: 24px;
+  margin-top: 30px;
+}
+#rohit_cart {
+  display: flex;
+  margin-left: 25px;
+}
+#rohit_carIm {
+  display: flex;
+}
+#rohit_cartcount {
+  margin-top: 25px;
+}
+
+#rohit_row3 {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.182);
+  padding-left: 180px;
+  margin-top: -20px;
+}
+
+#rohit_row3 > li {
+  list-style-type: none;
+  margin: 15px 20px;
+}
+#rohit_row3 > li > a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+#rohit_row3 > li > a:hover {
+  border-bottom: 3px solid rgb(253, 216, 53);
+  padding-bottom: 10px;
+  /* visibility: visible; */
+}
+
+h4 {
+  margin-top: -16px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
