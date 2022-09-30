@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>FlashSale | New Arrivals</title>
+    <link rel="shortcut icon" href="https://www.meanbuy.com/assets/img/icos/apple-icon-57x57.png" />
+    <link rel="stylesheet" href="./style/flashsale.css">
+    <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/footer.css">
 </head>
 
@@ -154,3 +157,43 @@
 
 </html>
 <script type="module" src="./script/flashsale.js"></script>
+<script>
+    var num = 1;
+    var num1 = 1;
+    const color = () => {
+        let color = document.getElementById("color_name");
+        // console.log("working")
+        if (num % 2 != 0) {
+            color.style.display = "block";
+            num++;
+        } else {
+            color.style.display = "none";
+            num++;
+        }
+    };
+    const brand = () => {
+        // console.log("working")
+        let brand = document.getElementById("brand_name");
+        if (num1 % 2 != 0) {
+            brand.style.display = "block";
+            num1++;
+        } else {
+            brand.style.display = "none";
+            num1++;
+        }
+    };
+    var num2 = 1;
+
+    const dropdownwhatsnew = () => {
+        let dropdown = document.getElementById("dropdown");
+        // console.log("working")
+        if (num2 % 2 != 0) {
+            dropdown.style.display = "block";
+            num2++;
+        } else {
+            dropdown.style.display = "none";
+            num2++;
+        }
+    };
+
+</script>

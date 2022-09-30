@@ -17,6 +17,140 @@
   margin-top: 160px;
 }
 
+.flashsale_product {
+  width: 80%;
+  margin-top: 160px;
+}
+
+.separator {
+  width: 1.5px;
+  height: auto;
+  background: #d3e2eb;
+}
+.separator-whatsnew {
+  width: 1.5px;
+  height: 25px;
+  background: #d3e2eb;
+  margin-left: 15px;
+}
+.dropdowncustom {
+  height: 30px;
+  width: 30px;
+}
+#titl {
+  font-size: 20px;
+  color: #455a64;
+}
+#second_div {
+  margin-top: -25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#star {
+  font-size: 30px;
+  margin-top: 33px;
+}
+#ship {
+  color: #008a00;
+  font-size: 18px;
+  font-weight: 400;
+}
+#price {
+  color: #f98d29;
+  font-size: 20px;
+  font-weight: 500;
+}
+#rating_div {
+  width: 13%;
+  height: 25px;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+  margin-top: -15px;
+  margin-left: 320px;
+  background-color: rgb(60, 193, 1);
+  padding: 4px 13px;
+  border-radius: 10px;
+}
+#dropdowncustom {
+  height: 30px;
+  width: 30px;
+}
+#image {
+  width: 85%;
+}
+#main_container {
+  width: 98%;
+  margin: auto;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 33.5%);
+  gap: 25px;
+}
+
+/* #main_div {
+  width: 35%;
+} */
+
+#filter {
+  color: #455a64;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.brands > :nth-child(1),
+.colors > :nth-child(1) {
+  margin-left: 10px;
+  color: #455a64;
+  font-size: 18px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+}
+#brand_name,
+#color_name {
+  display: none;
+  width: 80%;
+  margin: auto;
+  color: #455a64;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+label {
+  font-size: 19px;
+  text-align: center;
+}
+#dropdown {
+  width: 16.5%;
+  display: none;
+  background-color: white;
+  margin-right: 50px;
+  border: 1px solid rgb(234, 241, 245);
+  position: absolute;
+  z-index: 1;
+}
+ul li {
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: -20px;
+}
+#dropdown ul li :hover {
+  display: inline;
+  border-bottom: 1px solid #455a64;
+}
+.htl {
+  margin-left: 10px;
 }
 
 .flash_heading {
