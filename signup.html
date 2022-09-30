@@ -36,20 +36,20 @@
             <br /> <br />
             <div id="rohit_underline"></div>
             <br /> <br />
-            <form autocomplete="off">
+            <form>
                 <label>Email Address</label>
                 <br />
-                <input type="email" placeholder="Email Address" id="email" required/>
+                <input type="email" placeholder="Email Address" id="email"/>
                 <br />
                 <br />
                 <label>Password</label>
                 <br />
-                <input type="password" placeholder="Password" id="password" required/>
+                <input type="password" placeholder="Password" id="password" />
                 <br />
                 <br />
                 <label>Confirm Password</label>
                 <br />
-                <input type="password" placeholder="Confirm Passsword" id="confirmPassword" required/>
+                <input type="password" placeholder="Confirm Passsword" id="confirmPassword"/>
                 <br /> <br />
                 <input type="submit" value="Sign Up" id="rohit_signup" />
             </form>
@@ -91,3 +91,40 @@
 </body>
 
 </html>
+
+
+<script>
+    document.querySelector('form').addEventListener('submit',myFun1)
+    let arr = []
+    function myFun1(){
+        event.preventDefault()
+        
+        let a = document.querySelector("#email").value;
+        let b = document.querySelector('#password').value;
+        let c = document.querySelector("#confirmPassword").value;
+        if(b !== c){
+            alert("Password must be same")
+            return false
+        }
+        else{
+            alert("sign up successfull")
+            window.location.href = "otp.html"
+        }
+        let d1 = new data(a,b,c)
+        // console.log(d1)
+        arr.push(d1)
+        // console.log(arr)
+        
+
+
+
+
+
+    }
+
+    function data(e,p,cp){
+        this.email = e;
+        this.password = p;
+        this.cpassword = cp;
+    }
+</script>

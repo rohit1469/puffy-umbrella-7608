@@ -5,10 +5,6 @@ body {
 }
 
 #head_navbar {
-  width: 99vw;
-  height: auto;
-  position: fixed;
-  z-index: 9;
 
   background-color: white;
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.182); */
@@ -99,7 +95,7 @@ body {
 }
 
 #row2mid {
-  width: 460px;
+  width: 490px;
   height: 60px;
   display: flex;
   align-items: center;
