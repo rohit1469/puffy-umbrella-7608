@@ -18,7 +18,7 @@
 #aj_first_line_div {
   display: flex;
   height: fit-content;
-  margin-top: 150px;
+  /* margin-top: 150px; */
 }
 
 #aj_first_line {
@@ -194,21 +194,16 @@
   margin-left: 2px;
 }
 
-
 /* ----------------scroll--------------------- */
 
-
 .bigslide {
-
   height: 400px;
   width: 100%;
   margin-top: 190px;
-
 }
 
 .container {
   margin: 5%;
-
 }
 
 /* The dots/bullets/indicators bigslide*/
