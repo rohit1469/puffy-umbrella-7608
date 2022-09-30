@@ -1073,6 +1073,11 @@ let bestdeals_data = [
 bestdeals_data.forEach((ele) => {
   let div = document.createElement("div");
   div.class = "main_div";
+  div.addEventListener("click",()=>{
+    localStorage.setItem("bestdeals_data",JSON.stringify({...ele}));
+    window.location.href="bestdeals_productDetails.html";
+    // console.log("WOrking");
+  })
   let div1 = document.createElement("div");
   let img = document.createElement("img");
   img.id = "image";
