@@ -132,13 +132,13 @@
             <hr />
             <div id="subtotal">Subtotal:<span class="green"></span><br /><span class="lightorange">Shipping:Free</span>
             </div>
-            <p id="total">Total:</p>
+            <p id="total">Total: <span id="leftamount"></span></p>
             <p>Get up to 500.00 OFF on your First Time Prepaid Order<br />(COD excluded) with coupon <span
                     class="lightorange"> PREPAID</span>.</p>
             <P class="lightgrey">Got a Promotional Code? Use below:</P>
             <div id="promo">
-                <input type="text" placeholder="Promotional Code" id="enterpromo" /><button id="apply">Apply
-                    code</button>
+                <input type="text" placeholder="Promotional Code" id="enterpromo" />
+                <button id="apply">Apply code</button>
 
             </div>
             <br /> <br />
@@ -187,4 +187,29 @@
             get.style.backgroundColor = "orange";
         }
     }
+
+    let money = JSON.parse(localStorage.getItem("cartsum"));
+    // console.log(money)
+
+    let deetaa = document.querySelector(".green")
+    deetaa.innerHTML = money;
+
+    document.getElementById("apply").addEventListener('click',mYfun)
+
+    function mYfun(){
+        let promo = document.getElementById('enterpromo').value;
+        // console.log(promo)
+        // console.log("sjdfk")
+        if(promo === "PREPAID"){
+            // console.log(money)
+            let money1 = money - 500;
+                        // console.log(money1)
+
+            document.querySelector('#leftamount').innerHTML = money1
+        }
+        else{
+            alert('Invalid Promo Code')
+        }
+    }
+
 </script>
