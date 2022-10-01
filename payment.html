@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,69 +11,70 @@
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/footer.css">
 </head>
+
 <body>
     <div id="head_navbar"></div>
     <div id="main">
-        
-            <div id="rightpart">
-                <form action="">
+
+        <div id="rightpart">
+            <form action="">
                 <h4>Your Email & Phone Number</h4>
                 <h5>Email address</h5>
                 <p id="email">abc@gmail.com</p>
-    
+
                 <!-- <h5>Phone Number</h5> -->
-                
+
                 <label>Phone Number</label><br />
-                <input type="number" placeholder="Phone Number" id="num"/>
+                <input type="number" placeholder="Phone Number" id="num" />
                 <br /> <br />
-    
+
                 <div class="checkbox1">
-    
+
                     <div id="box1" onclick="change()"></div>
                     <div class="lightgrey">I agree to be contacted throung Whatsapp for Order Updates</div>
                 </div>
-    
+
                 <br />
                 <h4>Delivery Address</h4>
                 <label>Saved Address</label><br />
-                <input type="text" placeholder="Enter New Address" id="add"/>
+                <input type="text" placeholder="Enter New Address" id="add" />
                 <br /> <br />
-    
+
                 <div class="checkbox">
                     <div id="box2" onclick="change2()"></div>
                     <div class="lightgrey"> Default shipping Address</div>
                 </div>
                 <br />
-    
+
                 <label>Name</label><br />
                 <input type="text" placeholder="Name" id="name" />
                 <br /> <br />
-    
+
                 <div id="addressbox">
                     <div id="left">
                         <label>Address 1</label><br />
-                        <input type="text" placeholder="Address 1" id="add1"/>
+                        <input type="text" placeholder="Address 1" id="add1" />
                         <br /> <br />
-    
+
                         <label>State</label><br />
                         <input type="text" placeholder="Type State" id="state" />
                         <br /> <br />
-    
+
                         <label>Country</label><br />
-                        <input type="text" value="India" id="country"/>
-    
+                        <input type="text" value="India" id="country" />
+
                     </div>
-    
+
                     <!-- right part -->
                     <div id="right">
                         <label>Address 2 <span>(Optional)</span></label><br />
-                        <input type="text" placeholder="Address 2" id="add2"/>
+                        <input type="text" placeholder="Address 2" id="add2" />
                         <br /> <br />
-    
+
                         <label>City</label><br />
-                        <input type="text" placeholder="City" id="city"/>
+                        <input type="text" placeholder="City" id="city" />
                         <br /> <br />
-    
+
                         <label>Pin code</label><br />
                         <input type="text" placeholder="Pin Code" id="pincode" />
                     </div>
@@ -81,21 +83,21 @@
                 <h4>Payment Details</h4>
                 <div class="checkbox">
                     <div id="box3" onclick="change3()"></div>
-    
+
                     <div class="lightgrey"> Same as shopping address</div>
                 </div>
-    
+
                 <br />
                 <h4>Payment Details</h4>
-    
+
                 <div id="selectmethod">
-    
+
                     <div id="cod" class="change">
                         <img id="img" src="https://etimg.etb2bimg.com/photo/55492753.cms" />
                         <p>COD(Cash On Delivery</p>
                         <div id="one" class="orange"></div>
                     </div>
-    
+
                     <div id="card" class="change">
                         <img id="img" src="http://www.pngall.com/wp-content/uploads/2016/05/Debit-Card-PNG-HD.png" />
                         <p>Credit/Debit Card</p>
@@ -122,23 +124,23 @@
                 <div id="middlemeaao" class="lightgrey">We accept all credit and debit cards of india and international.
                 </div><br />
                 <div id="palce_order"><input type="submit" value="PLACE ORDER" id="palce_order"></div>
-    
+
             </form>
-            </div>
-        
+        </div>
+
         <div id="leftpart">
             <div id="addingitem"></div>
             <P class="lightorange">Edit Cart</P>
             <hr />
             <div id="subtotal">Subtotal:<span class="green"></span><br /><span class="lightorange">Shipping:Free</span>
             </div>
-            <p id="total">Total:</p>
+            <p id="total">Total: <span id="leftamount"></span></p>
             <p>Get up to 500.00 OFF on your First Time Prepaid Order<br />(COD excluded) with coupon <span
                     class="lightorange"> PREPAID</span>.</p>
             <P class="lightgrey">Got a Promotional Code? Use below:</P>
             <div id="promo">
-                <input type="text" placeholder="Promotional Code" id="enterpromo" /><button id="apply">Apply
-                    code</button>
+                <input type="text" placeholder="Promotional Code" id="enterpromo" />
+                <button id="apply">Apply code</button>
 
             </div>
             <br /> <br />
@@ -156,6 +158,7 @@
     </div>
     <div id="bottom_footer"></div>
 </body>
+
 </html>
 <script type="module" src="./script/payment.js"></script>
 <script>
@@ -187,4 +190,29 @@
             get.style.backgroundColor = "orange";
         }
     }
+
+    let money = JSON.parse(localStorage.getItem("cartsum"));
+    // console.log(money)
+
+    let deetaa = document.querySelector(".green")
+    deetaa.innerHTML = money;
+
+    document.getElementById("apply").addEventListener('click', mYfun)
+
+    function mYfun() {
+        let promo = document.getElementById('enterpromo').value;
+        // console.log(promo)
+        // console.log("sjdfk")
+        if (promo === "PREPAID") {
+            // console.log(money)
+            let money1 = money - 500;
+            // console.log(money1)
+
+            document.querySelector('#leftamount').innerHTML = money1
+        }
+        else {
+            alert('Invalid Promo Code')
+        }
+    }
+
 </script>
