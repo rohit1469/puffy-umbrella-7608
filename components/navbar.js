@@ -39,7 +39,7 @@ const navbar = () => {
             <div id="carIm">
                 <img class="cartimg" src="http://www.clker.com/cliparts/O/N/s/Q/P/Y/shopping-cart-orange-th.png"
                     alt="">
-                <p id="cartcount">0</p>
+                <p id="cartcount"></p>
             </div>
         </div>
     </div>
