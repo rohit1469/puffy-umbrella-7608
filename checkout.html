@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="shortcut icon" href="https://www.meanbuy.com/assets/img/icos/apple-icon-57x57.png" />
+    <link rel="stylesheet" href="./style/payment.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+</head>
+<body>
+    <div id="head_navbar"></div>
+    <div id="main">
+        
+            <div id="rightpart">
+                <form action="">
+                <!-- <h4>Your Email & Phone Number</h4> -->
+                <!-- <h5>Email address</h5> -->
+                <!-- <p id="email">abc@gmail.com</p> -->
+    
+                <!-- <h5>Phone Number</h5> -->
+                
+                <label>Phone Number</label><br />
+                <input type="number" placeholder="Phone Number" id="num"/>
+                <br /> <br />
+    
+                <div class="checkbox1">
+    
+                    <div id="box1" onclick="change()"></div>
+                    <div class="lightgrey">I agree to be contacted throung Whatsapp for Order Updates</div>
+                </div>
+    
+                <br />
+                <h4>Delivery Address</h4>
+                <!-- <br /> -->
+                <input type="text" placeholder="Enter New Address" id="add"/>
+                <br /> <br />
+    
+                <div class="checkbox">
+                    <div id="box2" onclick="change2()"></div>
+                    <div class="lightgrey"> Default shipping Address</div>
+                </div>
+                <br />
+    
+                <label>Name</label><br />
+                <input type="text" placeholder="Name" id="name" />
+                <br /> <br />
+    
+                <div id="addressbox">
+                    <div id="left">
+                        <label>Address 1</label><br />
+                        <input type="text" placeholder="Address 1" id="add1"/>
+                        <br /> <br />
+    
+                        <label>State</label><br />
+                        <input type="text" placeholder="Type State" id="state" />
+                        <br /> <br />
+    
+                        <label>Country</label><br />
+                        <input type="text" value="India" id="country"/>
+    
+                    </div>
+    
+                    <!-- right part -->
+                    <div id="right">
+                        <label>Address 2 <span>(Optional)</span></label><br />
+                        <input type="text" placeholder="Address 2" id="add2"/>
+                        <br /> <br />
+    
+                        <label>City</label><br />
+                        <input type="text" placeholder="City" id="city"/>
+                        <br /> <br />
+    
+                        <label>Pin code</label><br />
+                        <input type="text" placeholder="Pin Code" id="pincode" />
+                    </div>
+                </div>
+                <br /> <br />
+                <h4>Payment Details</h4>
+                <div class="checkbox">
+                    <div id="box3" onclick="change3()"></div>
+    
+                    <div class="lightgrey"> Same as shopping address</div>
+                </div>
+    
+                <br />
+                <h4>Payment Details</h4>
+    
+                <div id="selectmethod">
+    
+                    <div id="cod" class="change">
+                        <img id="img" src="https://etimg.etb2bimg.com/photo/55492753.cms" />
+                        <p>COD(Cash On Delivery</p>
+                        <div id="one" class="orange"></div>
+                    </div>
+    
+                    <div id="card" class="change">
+                        <img id="img" src="http://www.pngall.com/wp-content/uploads/2016/05/Debit-Card-PNG-HD.png" />
+                        <p>Credit/Debit Card</p>
+                        <div id="two" class="orange"></div>
+                    </div>
+                    <div id="netbanking" class="change"><img id="img"
+                            src="http://1.bp.blogspot.com/__fjbirlHSwg/S-d_F1pgO9I/AAAAAAAAAC8/nBJzxjV7Peg/s1600/EBANKING.bmp" />
+                        <p>Net Banking</p>
+                        <div id="three" class="orange"></div>
+                    </div>
+                    <div id="emi" class="change">
+                        <img id="img" src="https://www.oorjan.com/blog/wp-content/uploads/2019/02/f-2-300x257.png" />
+                        <p>EMI</p>
+                        <div id="four" class="orange"></div>
+                    </div>
+                    <div id="upi" class="change">
+                        <img id="img"
+                            src="https://static.financebuddha.com/blog/wp-content/uploads/2016/12/23155635/UPI1-945x709.jpg" />
+                        <p>UPI</p>
+                        <div id="five" class="orange"></div>
+                    </div>
+                </div>
+                <br />
+                <div id="middlemeaao" class="lightgrey">We accept all credit and debit cards of india and international.
+                </div><br />
+                <div id="palce_order"><input type="submit" value="PLACE ORDER" id="palce_order"></div>
+    
+            </form>
+            </div>
+        
+        <div id="leftpart">
+            <div id="addingitem"></div>
+            <P class="lightorange">Edit Cart</P>
+            <hr />
+            <div id="subtotal">Subtotal:<span class="green"></span><br /><span class="lightorange">Shipping:Free</span>
+            </div>
+            <p id="total">Total:</p>
+            <p>Get up to 500.00 OFF on your First Time Prepaid Order<br />(COD excluded) with coupon <span
+                    class="lightorange"> PREPAID</span>.</p>
+            <P class="lightgrey">Got a Promotional Code? Use below:</P>
+            <div id="promo">
+                <input type="text" placeholder="Promotional Code" id="enterpromo" /><button id="apply">Apply
+                    code</button>
+
+            </div>
+            <br /> <br />
+            <hr />
+            <div class="banner">
+                <img src="https://meanbuyassets.s3.ap-south-1.amazonaws.com/mb_square.png" alt="MeanBuy India"
+                    height="100" width="100">
+                <h4 class="gray"><b>Our Shop. Your Price.</b></h4>
+                <h5 class="gray"><b>Feel the power to buy at your price.</b></h5>
+                <div class="orangebar"></div>
+            </div>
+            <div id="bannerunderline"></div>
+        </div>
+
+    </div>
+    <div id="bottom_footer"></div>
+</body>
+</html>
+<script type="module" src="./script/payment.js"></script>
+<script>
+    function change() {
+        let get = document.getElementById("box1")
+        if (get.style.backgroundColor === "orange") {
+            get.style.backgroundColor = "white"
+        }
+        else {
+            get.style.backgroundColor = "orange";
+        }
+
+    }
+    function change2() {
+        let get = document.getElementById("box2")
+        if (get.style.backgroundColor === "orange") {
+            get.style.backgroundColor = "white"
+        }
+        else {
+            get.style.backgroundColor = "orange";
+        }
+    }
+    function change3() {
+        let get = document.getElementById("box3")
+        if (get.style.backgroundColor === "orange") {
+            get.style.backgroundColor = "white"
+        }
+        else {
+            get.style.backgroundColor = "orange";
+        }
+    }
+</script>

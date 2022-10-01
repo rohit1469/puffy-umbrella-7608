@@ -18,7 +18,9 @@ var container = document.getElementById("contentBox");
 var arr = JSON.parse(localStorage.getItem("flashsales_data")) || [];
 // var data = []
 
-console.log(arr, "ajay");
+console.log(arr)
+
+
 let div1 = document.createElement("div");
 div1.id = "prodImg";
 let div1div1 = document.createElement("div");
@@ -161,7 +163,7 @@ warntyDiv.appendChild(warntyDiv4);
 
 let divButt = document.createElement("div");
 let anchor = document.createElement("a");
-anchor.href = "../cartPage.html";
+anchor.href = "cartPage.html";
 // anchor.target = "_blank"
 let cartButt = document.createElement("button");
 cartButt.innerHTML = "BUY NOW";
@@ -170,49 +172,36 @@ let addToButt = document.createElement("button")
 addToButt.innerHTML = "ADD TO CART"
 // -------------------------------------------------------------------
 
-cartButt.onclick = function () {
-    console.log("inside the gotocart");
-};
-
-localStorage.setItem('cartsum', JSON.stringify(0)) || 0 /// not understood
-
+if (localStorage.getItem('cartsum') == null) {
+    localStorage.setItem('cartsum', JSON.stringify([]))
+}
 addToButt.onclick = function () {
-
-    console.log("inside the add button")
-    // var cartArr = []; ------no need
-    var cartArr = JSON.parse(localStorage.getItem("addToCart")) || [];
+    var cartArr = [];
+    cartArr = JSON.parse(localStorage.getItem("addToCart")) || [];
     cartArr.push(arr);
     localStorage.setItem("addToCart", JSON.stringify(cartArr));
     alert("Your item is added to cart.");
     cartButt.innerHTML = "GO TO CART"
     AddSum()
 }
-let cartsum
+let cartsum = 0
 function AddSum() {
-    // cartsum = 0;
-    // var cartArr = JSON.parse(localStorage.getItem("addToCart")) || [];
-    // console.log(cartArr)
-    // console.log(typeof +arr.price);
-    cartsum += arr.price
-    // let me = +cartsum
-    // console.log(cartsum);
-    // for (let i = 0; i < cartArr.length; i++) {
-    //     cartsum += parseInt(cartArr[i].price)
+    cartsum = 0;
+    var cartArr = JSON.parse(localStorage.getItem("addToCart"));
+    for (let i = 0; i < cartArr.length; i++) {
+        cartsum += parseInt(cartArr[i].price)
+    }
+    console.log(cartsum)
 
-    // }
-    // console.log(typeof +cartsum)
-
-    localStorage.setItem("cartsum", cartsum);
+    localStorage.setItem("cartsum", JSON.stringify(cartsum));
 }
-// AddSum();
-
-// ----------------------------------------------------------------------------
+AddSum();
 
 div1div2.appendChild(nameBox);
 div1div2.appendChild(warntyDiv);
 anchor.appendChild(cartButt);
 divButt.appendChild(addToButt)
-divButt.appendChild(anchor)
+divButt.appendChild(anchor);
 div1div2.appendChild(divButt);
 
 div1.appendChild(div1div1);
@@ -270,10 +259,10 @@ container.appendChild(div4);
 
 
 
-// var cartCount = document.getElementById("count")
-// function counts() {
-//     var a = JSON.parse(localStorage.getItem("addToCart"))
+var cartCount = document.getElementById("count")
+function counts() {
+    var a = JSON.parse(localStorage.getItem("addToCart"))
 
-//     cartCount.innerText = a.length
-// }
-// counts()
+    cartCount.innerText = a.length
+}
+counts()

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.meanbuy.com/assets/img/icos/apple-icon-57x57.png" />
+    <title>Your Cart Details</title>
+    <!-- <link rel="stylesheet" href="../CSS/cartPage.css"> -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #navBar {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+            gap: 150px;
+        }
+
+        #leftDiv {
+            width: auto;
+            height: auto;
+            padding: 1%;
+            display: grid;
+            grid-template-areas:
+                "a b"
+                "c d";
+        }
+
+        #a {
+            grid-area: a;
+        }
+
+        #a>a>img {
+            width: 240px;
+        }
+
+        #b {
+            grid-area: b;
+        }
+
+        #b>input {
+            margin-top: 30px;
+            height: 28px;
+            width: 350px;
+            padding: 2%;
+        }
+
+        #c {
+            grid-area: c;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 20px;
+        }
+
+        #c>button {
+            color: purple;
+        }
+
+        #c>button:hover {
+            text-decoration: underline;
+            color: red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #d {
+            grid-area: d;
+        }
+
+        #d>button {
+            margin-left: -20px;
+            background-color: black;
+            border-radius: 5px;
+
+        }
+
+        div>a {
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: purple;
+        }
+
+        div>a:hover {
+            text-decoration: underline;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #rightDiv {
+            display: flex;
+            gap: 20px;
+            width: auto;
+            height: auto;
+            padding: 1%;
+            margin-top: 20px;
+        }
+
+        #rightDiv>div>p>a:hover {
+            text-decoration: underline;
+            color: red;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #rightDiv img {
+            width: 30px;
+        }
+
+        #yourCart {
+            width: 100%;
+            height: auto;
+        }
+
+        #yourCart>#cartHead>p {
+            font-size: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: gray;
+            padding: 3%;
+            padding-left: 6%;
+        }
+
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .container>h1 {
+            padding: 20px 0;
+        }
+
+        .cart {
+            display: flex;
+        }
+
+        .products {
+            flex: 0.75;
+        }
+
+        .product:hover {
+            border: none;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            transform: scale(1.01);
+        }
+
+        .product>img:hover {
+            transform: scale(1.04);
+        }
+
+        .product-remove:hover {
+            background-color: white;
+            color: green;
+            font-weight: 600;
+            border: 1px solid green;
+        }
+
+
+
+        .cart-total {
+            flex: 0.25;
+            margin-left: 20px;
+            padding: 20px;
+            height: 240px;
+            border: 1px solid silver;
+            border-radius: 5px;
+        }
+
+        .cart-total p {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            font-size: 20px;
+        }
+
+        .cart-total a {
+            display: block;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+            background-color: tomato;
+            color: white;
+            text-decoration: none;
+        }
+
+        .cart-total a:hover {
+            background-color: red;
+        }
+
+
+        @media screen and (max-width: 700px) {
+            .remove {
+                display: none;
+            }
+
+            .product {
+                height: 150px;
+            }
+
+            .product>img {
+                height: 150px;
+                width: 200px;
+            }
+
+            .product-name,
+            .product-price,
+            .product-offer {
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .cart {
+                flex-direction: column;
+            }
+
+            .cart-total {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media screen and (max-width: 1220px) {
+            .container {
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navBar">
+        <div id="leftDiv">
+            <div id="a">
+                <a href="../index.html"><img src="https://meanbuyassets.s3.ap-south-1.amazonaws.com/baselogo.png"
+                        alt=""></a>
+            </div>
+            <div id="b">
+                <input type="text" placeholder="search here">
+            </div>
+            <div id="c" style="display:flex;gap:5px;">
+                <div>
+                    <h5 style="font-size: 18px;">Shopping Cart </h5>
+                </div>
+                <div>
+                    <p style="color:red;" id="items">(0 Items)</p>
+                </div>
+            </div>
+            <div id="d">
+                <button><a href="../HTML/bestDeals.html" style="color: aliceblue;padding: 5px;">Continue
+                        Shopping</a></button>
+            </div>
+        </div>
+
+        <div id="rightDiv">
+            <div>
+                <p style="margin-top: 10px;"><a href="">Seller's Corner</a> | <a href="">Feedback</a> | <a
+                        href="">Delivary Info</a></p>
+            </div>
+            <div>
+                <div style="text-align: center;">
+                    <p><a href="../HTML/login.html">LOGIN</a> / <a href="../HTML/signup.html">SIGNUP</a></p>
+                </div>
+                <div>
+                    <h4>WELCOME GUEST</h4>
+                </div>
+            </div>
+            <div style="display:flex;gap:5px">
+                <div><a href="../HTML/cartPage.html"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAOltESk2kisSh56FwjCYJz1BAd8MIgxM9Cw&usqp=CAU"
+                            alt=""></a></div>
+                <div>
+                    <p style="color: orangered;" id="cartCount">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="color: 2px solid orangered;">
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="cart">
+            <div class="products">
+                <table>
+                    <tbody class="productsTable">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-total">
+                <p>
+                    <span>Total Price</span>
+                    <span id="totalrupee">0</span>
+                </p>
+                <p>
+                    <span>Number of Items</span>
+                    <span id="numOfItem">0</span>
+                </p>
+                <p>
+                    <span>Select Delivery</span>
+                    <input type="date">
+                </p>
+                <a style="text-decoration: none;color:black;" href="payment.html">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <script src="../JS/cartPage.js"></script> -->
+
+</html>
+
+<script>
+    var cartedProducts = JSON.parse(localStorage.getItem('addToCart')) || [];
+    console.log(cartedProducts.length)
+
+    document.getElementById("cartCount").innerText = cartedProducts.length;
+
+    let totalcartsum = JSON.parse(localStorage.getItem('cartsum'));
+    if (totalcartsum == null) {
+        document.getElementById("totalrupee").innerText = "₹" + " " + 0;
+    }
+    else {
+        document.getElementById("totalrupee").innerText = "₹" + " " + totalcartsum;
+    }
+
+    document.getElementById("numOfItem").innerText = cartedProducts.length;
+    document.getElementById("items").innerText = ("(" + cartedProducts.length + " " + "Items" + ")");
+
+    function displayCart(cartedProducts) {
+        document.querySelector('.productsTable').innerHTML == '';
+
+        cartedProducts.forEach(product => {
+            var row = document.createElement('tr');
+
+            var content = document.createElement('td');
+
+            var pushData = document.createElement('div');
+            pushData.class = 'product';
+            pushData.style.hover = 'border: none;box-shadow: 2px 2px 4px rgba(0,0,0,0.2);transform: scale(1.01);'
+            pushData.style = 'display: flex;width: auto;height: 200px;overflow: hidden;border: 1px solid silver;margin-bottom: 20px;border-radius:7px;'
+
+            var image = document.createElement('img');
+            image.src = product.image;
+            image.style = 'padding: 3%;width: 300px;height: 200px;object-fit: cover;'
+            image.hover = 'transform: scale(1.04);'
+
+
+            var box = document.createElement('div');
+            box.class = 'product-info';
+            box.style = 'padding: 20px;width: 100%;position: relative;'
+
+            var r1 = document.createElement('h3');
+            r1.class = 'product-name';
+            r1.innerText = product.title;
+            r1.style = 'margin-bottom: 20px;'
+
+            var r2 = document.createElement('h4');
+            r2.class = 'product-price';
+            r2.innerText = ("₹ " + parseInt(product.price));
+            r2.style = 'margin-bottom: 20px;'
+
+            // var r3 = document.createElement('h4');
+            // r3.class = 'product-offer';
+            // r3.innerText = product.off;
+            // r3.style = 'margin-bottom: 20px;'
+
+            var r4 = document.createElement('p');
+            r4.class = 'product-quantity';
+            r4.style = 'width: 40px;padding: 5px;text-align: center;'
+            r4.innerText = 'QTY: ';
+
+            var ip = document.createElement('input');
+            ip.value = '1';
+            ip.style = 'width: 40px;padding: 5px;text-align: center;'
+            r4.append(ip);
+
+            var r5 = document.createElement('button');
+            r5.class = 'product-remove';
+            r5.innerText = 'Remove';
+            r5.style = 'position: absolute;bottom: 20px;right: 20px;padding: 10px 25px;background-color: green;color: white;cursor: pointer;border-radius: 5px'
+            r5.style.hover = 'background-color: white;color: green;font-weight: 600;border: 1px solid green;'
+            r5.addEventListener('click', function (ele, index) {
+                cartedProducts.splice(index, 1)
+                localStorage.setItem("addToCart", JSON.stringify(cartedProducts))
+                document.getElementsByClassName("productsTable").innerHTML = ""
+
+                totalcartsum -= parseInt(product.price)
+                localStorage.setItem('cartsum', totalcartsum)
+                window.location.reload()
+                // console.log(product.price)
+            });
+            box.append(r1, r2, r4, r5);
+
+            pushData.append(image, box);
+
+            content.append(pushData)
+
+            row.append(content);
+
+            document.querySelector('.productsTable').append(row);
+        });
+    }
+
+
+
+
+    window.addEventListener('load', function () {
+        displayCart(cartedProducts);
+    });
+
+
+</script>
