@@ -37,7 +37,7 @@ const footer = () => {
     <div class="footer_box">
         <div id="email_section">
             <input type="email" placeholder="Enter Email Address">
-            <button> Subscribe</button>
+            <button id="subscribe"> Subscribe</button>
         </div>
         <div id="social_logo">
             <img class="footer_logo" src="https://cdn-icons-png.flaticon.com/128/1409/1409946.png" alt="">
